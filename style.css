@@ -76,7 +76,7 @@ a {
   width: auto;
   display: block;
   object-fit: contain;
-  transform: scale(1.2); /* Reduced slightly to ensure it stays completely inside the navbar */
+  transform: scale(1.52); /* Increased size by ~12.5% for desktop */
   transform-origin: left center;
 }
 
@@ -907,6 +907,10 @@ a {
 
 /* Tablet & Smaller Desktop */
 @media (max-width: 1024px) {
+  .nav-logo {
+    transform: scale(1.35); /* Keep previous size for tablet */
+  }
+
   .chapter-left { width: 30%; }
   .chapter-right { width: 70%; }
   
@@ -942,6 +946,10 @@ a {
   
   .nav-center a {
     font-size: 0.75rem;
+  }
+
+  .nav-logo {
+    transform: scale(1.75); /* Increased mobile size by ~30% */
   }
 
   /* Hero Section */
